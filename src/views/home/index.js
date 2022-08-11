@@ -6,6 +6,7 @@ import {
   Button,
   Image,
   Badge,
+  useToast,
 } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import { useWeb3React } from "@web3-react/core";
@@ -13,8 +14,10 @@ import usePlatziPunks from "../../hooks/usePlatziPunks";
 import { useCallback, useEffect, useState } from "react";
 
 const Home = () => {
+  const [isMinting, setIsMinting] = useState(false);
   const [imageSrc, setImageSrc] = useState("");
   const [availablePlatziPunks, setAvailablePlatziPunks] = useState();
+  const toast = useToast();
 
   const { active, account } = useWeb3React();
   const platziPunks = usePlatziPunks();
@@ -37,6 +40,39 @@ const Home = () => {
   useEffect(() => {
     getPlatziPunksData();
   }, [getPlatziPunksData]);
+
+  const mint = () => {
+    setIsMinting(true);
+    platziPunks.methods
+      .mint()
+      .send({
+        from: account,
+      })
+      .on("transactionHash", (txHash) => {
+        toast({
+          title: "Transacción enviada",
+          description: txHash,
+          status: "info",
+        });
+      })
+      .on("receipt", () => {
+        setIsMinting(false);
+        toast({
+          title: "Transacción confirmada",
+          description: "Nunca pares de aprender",
+          status: "success",
+        });
+        getPlatziPunksData();
+      })
+      .on("error", (error) => {
+        setIsMinting(false);
+        toast({
+          title: "Transacción fallida",
+          description: error.message,
+          status: "error",
+        });
+      });
+  };
 
   return (
     <Stack
@@ -95,6 +131,8 @@ const Home = () => {
             bg={"green.400"}
             _hover={{ bg: "green.500" }}
             disabled={!platziPunks || availablePlatziPunks === 0}
+            onClick={mint}
+            isLoading={isMinting}
           >
             Obtén tu punk
           </Button>
@@ -132,7 +170,7 @@ const Home = () => {
             </Flex>
             <Badge mt={2}>
               {availablePlatziPunks > 0
-                ? `Quedan ${availablePlatziPunks} Platzi Punks por mintear!`
+                ? `Quedan ${availablePlatziPunks} Platzi Punks!`
                 : `Se agotaron los Platzi Punks :(`}
             </Badge>
             <Button
