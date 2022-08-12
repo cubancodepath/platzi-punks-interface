@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@web3-react/core": "^6.1.9",
     "@web3-react/injected-connector": "^6.0.7",
+    "dotenv": "^16.0.1",
     "framer-motion": "^7.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -25,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy-ipfs": "node deploy.js"
   },
   "eslintConfig": {
     "extends": [
@@ -44,5 +46,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {}
 }
