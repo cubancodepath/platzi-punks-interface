@@ -11,11 +11,6 @@ const PlatziPunksArtifact = {
           name: "_maxSupply",
           type: "uint256",
         },
-        {
-          internalType: "string",
-          name: "_URI",
-          type: "string",
-        },
       ],
       stateMutability: "nonpayable",
       type: "constructor",
@@ -559,7 +554,7 @@ const PlatziPunksArtifact = {
         },
         {
           internalType: "bytes",
-          name: "data",
+          name: "_data",
           type: "bytes",
         },
       ],
@@ -627,6 +622,25 @@ const PlatziPunksArtifact = {
         },
       ],
       name: "tokenByIndex",
+      outputs: [
+        {
+          internalType: "uint256",
+          name: "",
+          type: "uint256",
+        },
+      ],
+      stateMutability: "view",
+      type: "function",
+    },
+    {
+      inputs: [
+        {
+          internalType: "uint256",
+          name: "",
+          type: "uint256",
+        },
+      ],
+      name: "tokenDNA",
       outputs: [
         {
           internalType: "uint256",
