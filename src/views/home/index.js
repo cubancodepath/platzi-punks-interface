@@ -11,16 +11,19 @@ import {
 import { Link } from "react-router-dom";
 import { useWeb3React } from "@web3-react/core";
 import usePlatziPunks from "../../hooks/usePlatziPunks";
+import useTruncatedAddress from "../../hooks/useTruncatedAddress";
 import { useCallback, useEffect, useState } from "react";
 
 const Home = () => {
   const [isMinting, setIsMinting] = useState(false);
   const [imageSrc, setImageSrc] = useState("");
+  const [nextId, setNextId] = useState();
   const [availablePlatziPunks, setAvailablePlatziPunks] = useState();
   const toast = useToast();
 
   const { active, account } = useWeb3React();
   const platziPunks = usePlatziPunks();
+  const showAddress = useTruncatedAddress(account);
 
   const getPlatziPunksData = useCallback(async () => {
     if (platziPunks) {
@@ -33,6 +36,7 @@ const Home = () => {
         .imageByDNA(dnaPreview)
         .call();
       setImageSrc(image);
+      setNextId(totalSupply);
       setAvailablePlatziPunks(maxSupply - totalSupply);
     }
   }, [platziPunks, account]);
@@ -158,13 +162,13 @@ const Home = () => {
               <Badge>
                 Next ID:
                 <Badge ml={1} colorScheme="green">
-                  1
+                  {nextId}
                 </Badge>
               </Badge>
               <Badge ml={2}>
                 Address:
                 <Badge ml={1} colorScheme="green">
-                  0x0000...0000
+                  {showAddress}
                 </Badge>
               </Badge>
             </Flex>

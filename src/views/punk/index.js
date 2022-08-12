@@ -46,7 +46,9 @@ const Punk = () => {
     } else {
       platziPunks.methods
         .safeTransferFrom(account, address, punk.tokenId)
-        .send()
+        .send({
+          from: account,
+        })
         .on("transactionHash", (txHash) => {
           toast({
             title: "Transaccion enviada",
@@ -92,6 +94,7 @@ const Punk = () => {
           disabled={account !== punk.owner}
           colorScheme="green"
           onClick={transfer}
+          isLoading={transferring}
         >
           {account !== punk.owner ? "No eres el dueño" : "Transferir"}
         </Button>
