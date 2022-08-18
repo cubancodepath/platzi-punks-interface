@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# PlatziPunks Interface
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PlatziPunks interface is a web app in that you can mint, visualize and transfer Not Fungible Tokens (NFT) from the contracts [PlatziPunks](https://github.com/bjvalmaseda92/platzi-punks) . It was create like final Project of the Frontend for Dapp course in [Platzi](https://platzi.com).
 
-## Available Scripts
+## Content Table
+  - [Demo](#demo)
+  - [Features](#features)
+  - [Installation steps](#installation-steps)
+  - [The building process](#the-building-process)
+    - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
+  - [License](#license)
+  - [Author](#author)
 
-In the project directory, you can run:
+## Demo
+You can find a demo in https://blue-rain-4468.on.fleek.co/ or use this hash *QmaVcPtkAzDMGbSQonjoKzQe5y3jNGTS7kQ5DT1PWtNHXQ* to [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) network. 
 
-### `npm start`
+![PlatziPunks Home](docs/home.png)
+![PlatziPunks Home](docs/gallery.png)
+![PlatziPunks Home](docs/details.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Mint a NFT
+- Vizualise all NFT in the collection (Contract)
+- Filters NFT by wallets address
+- Transfer NFT to others accounts
 
-### `npm test`
+## Installation steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If you like run your own demo follow this steps
 
-### `npm run build`
+1. Clone this repository
+   ```sh
+   $ git clone https://github.com/bjvalmaseda92/platzi-punks.git
+   ```
+2. Run npm install inside folder repo
+   ```sh
+   $ npm install
+   ```
+3. Run npm start to run a local server
+   ```sh
+   $ npm start
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## The building process
+ ### Built with
+- [Create React App](https://create-react-app.dev/)
+- [Web3.js](https://web3js.readthedocs.io/)
+- [Chakra UI](https://chakra-ui.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Useful resources
+- [Fleek](https://fleek.co/): Deploy to IPFS or the Internet Computer in Seconds
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
 
-### `npm run eject`
+## Author
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Made by [@bjvalmaseda](https://www.twitter.com/bjvalmaseda)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
