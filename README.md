@@ -53,7 +53,7 @@ If you like run your own demo follow this steps
 - [Fleek](https://fleek.co/): Deploy to IPFS or the Internet Computer in Seconds
 
 ## License
-
+> This project is licensed under MIT.
 ## Author
 
 Made by [@bjvalmaseda](https://www.twitter.com/bjvalmaseda)
