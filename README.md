@@ -13,7 +13,7 @@ PlatziPunks interface is a web app in that you can mint, visualize and transfer 
   - [Author](#author)
 
 ## Demo
-You can find a demo in [https://platzipunks.bjvalmaseda.xyz/](https://platzipunks.bjvalmaseda.xyz/) or use this hash *QmaVcPtkAzDMGbSQonjoKzQe5y3jNGTS7kQ5DT1PWtNHXQ* to [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) network. 
+You can find a demo in [https://blue-rain-4468.on.fleek.co/](https://blue-rain-4468.on.fleek.co/) or use this hash *QmaVcPtkAzDMGbSQonjoKzQe5y3jNGTS7kQ5DT1PWtNHXQ* to [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) network. 
 
 ![PlatziPunks Home](docs/home.png)
 ![PlatziPunks Home](docs/gallery.png)
@@ -22,7 +22,7 @@ You can find a demo in [https://platzipunks.bjvalmaseda.xyz/](https://platzipunk
 ## Features
 
 - Mint a NFT
-- Vizualise all NFT in the collection (Contract)
+- Visualize all NFT in the collection (Contract)
 - Filters NFT by wallets address
 - Transfer NFT to others accounts
 
