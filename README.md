@@ -1,8 +1,10 @@
 # PlatziPunks Interface
 
-PlatziPunks interface is a web app in that you can mint, visualize and transfer Not Fungible Tokens (NFT) from the contracts [PlatziPunks](https://github.com/bjvalmaseda92/platzi-punks) . It was create like final Project of the Frontend for Dapp course in [Platzi](https://platzi.com).
+PlatziPunks interface is a web app in that you can mint, visualize and transfer Not Fungible Tokens (NFT) from the contracts [PlatziPunks](https://github.com/bjvalmaseda-dev/platzi-punks) . It was create like final Project of the Frontend for Dapp course in [Platzi](https://platzi.com).
 
 ## Content Table
+- [PlatziPunks Interface](#platzipunks-interface)
+  - [Content Table](#content-table)
   - [Demo](#demo)
   - [Features](#features)
   - [Installation steps](#installation-steps)
@@ -13,7 +15,7 @@ PlatziPunks interface is a web app in that you can mint, visualize and transfer 
   - [Author](#author)
 
 ## Demo
-You can find a demo in [https://blue-rain-4468.on.fleek.co/](https://blue-rain-4468.on.fleek.co/) or use this hash *QmaVcPtkAzDMGbSQonjoKzQe5y3jNGTS7kQ5DT1PWtNHXQ* to [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) network. 
+You can find a demo in [https://punks-nft.bjvalmaseda.com/](https://punks-nft.bjvalmaseda.com/) or use this hash *QmaVcPtkAzDMGbSQonjoKzQe5y3jNGTS7kQ5DT1PWtNHXQ* to [IPFS](https://en.wikipedia.org/wiki/InterPlanetary_File_System) network. 
 
 ![PlatziPunks Home](docs/home.png)
 ![PlatziPunks Home](docs/gallery.png)
